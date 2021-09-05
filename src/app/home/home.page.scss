@@ -1,0 +1,345 @@
+// .stAll{
+//     fill:rgb(0,0,0);
+//     stroke-miterlimit:10;
+// }
+
+// .st0
+// {
+//     fill:rgb(0,0,0);
+//     stroke-miterlimit:10;
+// }
+.backsvg
+{
+    fill:none;stroke:#000000;stroke-miterlimit:10;
+}
+.ststart1{
+    fill:rgb(170, 255, 0);
+    stroke-miterlimit:10;
+}
+
+.stend1{
+    fill:rgb(0,0,0);
+    stroke-miterlimit:10;
+}
+
+.svg1
+{
+    fill:none;stroke:#50ff04;stroke-miterlimit:10;
+}
+
+.ststart2{
+    fill:rgb(255, 248, 30);
+    stroke-miterlimit:10;
+}
+
+.stend2{
+    fill:rgb(0,0,0);
+    stroke-miterlimit:10;
+}
+
+.svg2
+{
+    fill:none;stroke:rgb(255, 248, 30);stroke-miterlimit:10;
+}
+
+
+
+
+.ststart3{
+    fill:rgb(30, 233, 255);
+    stroke-miterlimit:10;
+}
+
+.stend3{
+    fill:rgb(0,0,0);
+    stroke-miterlimit:10;
+}
+
+.svg3
+{
+    fill:none;stroke:rgb(30, 233, 255);stroke-miterlimit:10;
+}
+
+
+
+.ststart4{
+    fill:rgb(250, 95, 38);
+    stroke-miterlimit:10;
+}
+
+.stend4{
+    fill:rgb(0,0,0);
+    stroke-miterlimit:10;
+}
+
+.svg4
+{
+    fill:none;stroke:rgb(250, 95, 38);stroke-miterlimit:10;
+}
+
+.ststart5{
+    fill:rgb(216, 53, 225);
+    stroke-miterlimit:10;
+}
+
+.stend5{
+    fill:rgb(0,0,0);
+    stroke-miterlimit:10;
+}
+
+.svg5
+{
+    fill:none;stroke:rgb(216, 53, 225);stroke-miterlimit:10;
+}
+
+.ststart6{
+    fill:rgb(70, 61, 228);
+    stroke-miterlimit:10;
+}
+
+.stend6{
+    fill:rgb(0,0,0);
+    stroke-miterlimit:10;
+}
+
+.svg6
+{
+    fill:none;stroke:rgb(70, 61, 228);stroke-miterlimit:10;
+}
+
+
+
+
+
+
+
+
+
+
+// .st2
+// {
+//     fill:rgb(0,0,0);
+//     stroke-miterlimit:10;
+// }
+// .st3
+// {
+//     fill:rgb(0,0,0);
+//     stroke-miterlimit:10;
+// }
+// .st4
+// {
+//     fill:rgb(0,0,0);
+//     stroke-miterlimit:10;
+// }
+// .st5
+// {
+//     fill:rgb(0,0,0);
+//     stroke-miterlimit:10;
+// }
+// .st6
+// {
+//     fill:rgb(0,0,0);
+//     stroke-miterlimit:10;
+    
+// }
+
+
+
+
+.back{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0; 
+}
+// .light{
+//     width: 100%;
+//     height: 30%;
+ 
+// }
+.main{
+    width: 100%;
+    height: 100%;
+    // margin-top: 40%;
+    -moz-box-shadow:   inset 0 0 20px #e6e5e3;
+   -webkit-box-shadow: inset 0 0 20px #e6e5e3;
+   box-shadow:         inset 0 0 20px #e6e5e3;
+}
+.circle{
+    margin-top: 38%;
+    stroke:rgb(252, 4, 252);
+    animation-name: rotEl;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: radial-gradient(#000, rgba(255,255,255,0));
+ 
+}
+svg{
+    drop-shadow: 10px 10px 10px yellow;
+
+}
+@keyframes rotEl{
+    0%{
+        transform: rotate(0deg);
+        stroke:rgb(134,255,0);
+    }
+    25%{
+        transform: rotate(90deg);
+        stroke:rgb(0,226,255);
+    }
+    50%{
+        transform: rotate(180deg);
+        stroke:rgb(4, 252, 25);
+    }
+    75%{
+        transform: rotate(270deg);
+        stroke:rgb(236, 255, 22);
+    }
+    100%{
+        transform: rotate(360deg);
+        stroke:rgb(255,214,0);
+    }
+}
+
+// --------------------
+
+.glowing
+{
+    position: relative;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+    top: 60%;
+    left: 58%;
+}
+.glowing span{
+    position: relative;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.glowing span:before{
+    content:'';
+    position: absolute;
+    top:50%;
+    left: -5px;
+    width: 280px;
+    height: 280px;
+    background: #ff0;
+    border-radius: 50%;
+}
+.glowing span:nth-child(1){
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: animate 15s linear infinite;
+}
+.glowing span:nth-child(1):before{
+    background: rgba(134,255,0,1);
+    box-shadow: 0 0 20px rgba(134,255,0,1),
+                0 0 40px rgba(134,255,0,1),
+                0 0 60px rgba(134,255,0,1),
+                0 0 80px rgba(134,255,0,1),
+                0 0 4px rgba(134,255,0,0.1);
+}
+.glowing span:nth-child(2){
+    top:20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    animation: animate-myreverse 15s linear infinite;
+}
+
+.glowing span:nth-child(2):before{
+    background: rgba(255,214,0,1);
+    box-shadow: 0 0 20px rgba(255,214,0,1),
+                0 0 40px rgba(255,214,0,1),
+                0 0 60px rgba(255,214,0,1),
+                0 0 80px rgba(255,214,0,1),
+                0 0 4px rgba(255,214,0,0.1);
+}
+.glowing span:nth-child(3){
+    top:40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    animation: animate 15s linear infinite;
+}
+.glowing span:nth-child(3):before{
+    background: rgba(0,226,255,1);
+    box-shadow: 0 0 20px rgba(0,226,255,1),
+                0 0 40px rgba(0,226,255,1),
+                0 0 60px rgba(0,226,255,1),
+                0 0 80px rgba(0,226,255,1),
+                0 0 4px rgba(0,226,255,0.1);
+}
+.mycircle{
+    /*display: none;*/
+    position: relative;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    animation: animate 15s linear infinite;
+}
+.mycircle:nth-child {
+    /*display: none;*/
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    animation: animate 15s linear infinite;
+}
+.mycircle span{
+    position: relative;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+}
+.mycircle span:nth-child(1){
+    filter: blur(5px);
+}
+.mycircle span:nth-child(2){
+    filter: blur(10px);
+}
+.mycircle span:nth-child(3){
+    filter: blur(25px);
+}
+.mycircle span:nth-child(4){
+    filter: blur(50px);
+}
+@keyframes animate
+{
+0%
+{
+transform: rotate(0deg);
+}
+50%
+{
+transform: rotate(90deg);
+
+}
+100%
+{
+transform: rotate(0deg);
+}
+}
+@keyframes animate-myreverse
+{
+0%
+{
+transform: rotate(90deg);
+}
+50%
+{
+transform: rotate(0deg);
+}
+100%
+{
+transform: rotate(90deg);
+}
+}
