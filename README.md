@@ -3,7 +3,10 @@
     <img src="./resources/icon.png" width="100" height="100">
   </a>
 <h2 align="center">Cordova App</h2>
-https://user-images.githubusercontent.com/99984490/185706233-0db0b8c6-11f8-4ed2-8fc4-79593782b84a.mp4
+
+
+https://user-images.githubusercontent.com/99984490/185709768-db7c6346-806f-4f30-b8e2-e7789b20242b.mp4
+
 </div>
 
 
